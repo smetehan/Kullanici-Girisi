@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class project {
+    public static void main(String[] args) {
+
+    String userName, password ;
+            int password2;
+    Scanner inp=new Scanner(System.in);
+    Scanner inp2=new Scanner(System.in);
+
+    System.out.print("Kullanici Adiniz :");
+    userName=inp.nextLine();
+    System.out.print("Sifrenizi Giriniz :");
+    password=inp.nextLine();
+
+
+
+    if(userName.equals("ayca") && password.equals("1234")){
+            System.out.print("Giris basarili");
+
+        }
+        else{
+        System.out.println("Hatali giris yaptiniz.");
+
+        System.out.println("\n1 Sifre Degistirme \n2 Programi kapat");
+        System.out.print("Devam edebilmek icin lutfen secim yapiniz :");
+        password2=inp.nextInt();
+
+        switch (password2){
+            case 1 :
+                System.out.println("Yeni sifreyi giriniz :");
+                String password3= inp2.nextLine();
+
+               if(password3.equals("1234")){
+                    System.out.println("Sifre olusturulamadi lutfen baska sifre deneyiniz..");
+
+                }
+else{
+                    System.out.println("Sifreniz olusturuldu.");
+                }
+break;
+            case 2:
+                System.out.println("Program kapatildi.");
+
+        }
+
+
+
+        }
+
+
+
+
+
+
+
+
+    }
+}
